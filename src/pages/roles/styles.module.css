@@ -1,0 +1,10 @@
+.homeHeader {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.homeMain {
+    margin-top: 40px;
+}
