@@ -57,7 +57,7 @@ class RolesService {
         return data as Roles
     }
 
-    public async update(id: number, roles: Roles) {
+    public async update(id: string, roles: Roles) {
         const response = await fetch(`${this.url}/${id}`, {
             method: 'PUT',
             headers: this.getHeaders(),
