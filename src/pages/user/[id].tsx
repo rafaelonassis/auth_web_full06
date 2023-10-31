@@ -131,10 +131,9 @@ export default function UserPage() {
         {" "}
         <title>Cadastro de Usuário</title>{" "}
       </Head>
+      <h2 className={styles.title}>{title}</h2>
 
       <main className={styles.main}>
-        <h2>{title}</h2>
-
         <div className={styles.inputs}>
           <MyInput
             label="Nome"
@@ -157,12 +156,13 @@ export default function UserPage() {
             type="password"
             onChange={(event) => setPassConfirm(event.target.value)}
           />
+          <p className={styles.roleTitle}>Papéis</p>
           {roles.map((role) => (
             <MyInput label={role.name} type="checkbox" key={role.id} />
           ))}
         </div>
 
-        <button className={styles.button} onClick={save}>
+        <button className={styles.saveButton} onClick={save}>
           Salvar
         </button>
       </main>

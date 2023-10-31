@@ -2,9 +2,17 @@
     justify-content: flex-start;
 }
 
-.inputs {
+.title {
+    padding-top: 2rem;
+    justify-content: center;
     display: flex;
-    align-items: flex-end;
+    font-size: 1.5rem;
+}
+
+.inputs {
+    width: 15rem;
+    display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -16,4 +24,25 @@
     border-radius: 3px;
     padding: 10px 0px 10px 0px;
     background-color: cadetblue;
+}
+
+.saveButton {
+    margin-top: 2rem;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0px;
+    background-color: #00B37E;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.saveButton:hover {
+    background-color: #00875F;
+}
+
+.roleTitle {
+    margin-bottom: 4px;
+    font-size: 18px;
 }

@@ -1,11 +1,29 @@
-.loginMain {
-    justify-content: flex-start;
+.title {
+    margin-bottom: 32px;
+    font-size: 2rem;
 }
 
 .loginButton {
+    margin-top: 2rem;
     width: 200px;
     font-size: 18px;
-    border-radius: 3px;
+    border: none;
+    border-radius: 8px;
     padding: 10px 0px 10px 0px;
-    background-color: cadetblue;
+    background-color: #00B37E;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.loginButton:hover {
+    background-color: #00875F;
+}
+
+.loginContainer {
+    width: 16rem;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #202024;
+    margin: 16px auto;
 }

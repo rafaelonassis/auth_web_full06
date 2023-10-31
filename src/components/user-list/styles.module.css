@@ -17,13 +17,10 @@
     font-size: 18px;
 }
 
-.editButton {
-    padding: 4px;
-    margin-right: 10px;
-}
-
-.delButton {
-    color: red;
+.buttons {
+    display: inline-flex;
+    border: none;
+    align-items: center;
+    background-color: transparent;
     cursor: pointer;
-    padding: 4px;
 }

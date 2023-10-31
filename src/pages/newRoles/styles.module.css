@@ -3,6 +3,7 @@
 }
 
 .inputs {
+    width: 14rem;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -16,4 +17,20 @@
     border-radius: 3px;
     padding: 10px 0px 10px 0px;
     background-color: cadetblue;
+}
+
+.saveButton {
+    margin-top: 2rem;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0px;
+    background-color: #00B37E;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.saveButton:hover {
+    background-color: #00875F;
 }

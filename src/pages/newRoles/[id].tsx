@@ -13,7 +13,7 @@ export default function RolePage() {
   const router = useRouter();
   const params = useParams();
 
-  const [title, setTitle] = React.useState("Nova Role");
+  const [title, setTitle] = React.useState("Novo Papel");
 
   const [id, setId] = React.useState(0);
   const [name, setName] = React.useState("");
@@ -85,7 +85,7 @@ export default function RolePage() {
     <div className={styles.loginPage}>
       <Head>
         {" "}
-        <title>Cadastro de Usuário</title>{" "}
+        <title>Cadastro de Papel</title>{" "}
       </Head>
 
       <main className={styles.main}>
@@ -105,7 +105,7 @@ export default function RolePage() {
           />
         </div>
 
-        <button className={styles.button} onClick={save}>
+        <button className={styles.saveButton} onClick={save}>
           Salvar
         </button>
       </main>

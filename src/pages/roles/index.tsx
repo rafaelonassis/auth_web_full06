@@ -6,6 +6,7 @@ import { Roles } from "@/model/roles";
 import { authService } from "@/services/auth.service";
 import RoleList from "@/components/roles-list";
 import { rolesService } from "@/services/roles.service";
+import { PlusCircle, SignOut, Users } from "@phosphor-icons/react";
 
 const rolesPage = () => {
   const router = useRouter();
@@ -63,20 +64,24 @@ const rolesPage = () => {
       <Head>
         <title>Home Page</title>
       </Head>
+      <header className={styles.title}>
+        <h3>Listagem de Roles</h3>
+      </header>
       <main>
         <div className={styles.homeHeader}>
-          <div>
-            <button onClick={logoff}>Sair</button>
-          </div>
+          <button className={styles.buttons} onClick={logoff}>
+            <SignOut size={32} color="#F03847" />
+            <span className={styles.textButton}>Sair</span>
+          </button>
 
-          <h3>Listagem de Roles</h3>
-
-          <div>
-            <button onClick={goToUser}>Usuarios</button>
-          </div>
-          <div>
-            <button onClick={goToRoles}>Add Roles</button>
-          </div>
+          <button className={styles.buttons} onClick={goToUser}>
+            <Users size={32} color="#00B37E" />
+            <span className={styles.textButton}>Usuários</span>
+          </button>
+          <button className={styles.buttons} onClick={goToRoles}>
+            <PlusCircle size={32} color="#00B37E" />
+            <span className={styles.textButton}>Adicionar Papéis</span>
+          </button>
         </div>
 
         <div className={styles.homeMain}>

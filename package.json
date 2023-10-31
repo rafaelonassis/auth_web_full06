@@ -9,14 +9,16 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@phosphor-icons/react": "^2.0.13",
+        "next": "latest",
+        "phosphor-icons": "^1.4.2",
         "react": "latest",
-        "react-dom": "latest",
-        "next": "latest"
+        "react-dom": "latest"
     },
     "devDependencies": {
-        "typescript": "latest",
-        "@types/react": "latest",
         "@types/node": "latest",
-        "@types/react-dom": "latest"
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "typescript": "latest"
     }
 }
